@@ -3,9 +3,181 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>modal sticky footer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./main.css">
 </head>
 <body>
-  
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Some text in the Modal..</p>
+  </div>
+
+</div>
+
+
+  <div class="wrapper">
+    <div class="header">
+      <img src="https://placehold.co/250x120" alt="placeholder image">
+      <div class="statement">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque similique dicta nesciunt</p>
+      </div>
+    </div>
+    
+    <div class="modal-wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th>header 1</th>
+            <th>header 2</th>
+            <th>header 3</th>
+            <th>header 4</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>cell 1_1</td>
+            <td>cell 2_1</td>
+            <td>cell 3_1</td>
+            <!-- Trigger/Open The Modal -->
+            <td><button class="popupBtn">&#182;</button> cell 4_1</td>
+          </tr>
+          <tr>
+            <td>cell 1_2</td>
+            <td>cell 2_2</td>
+            <td>cell 3_2</td>
+            <td>cell 4_2</td>
+          </tr>
+          <tr>
+            <td>cell 1_3</td>
+            <td>cell 2_3</td>
+            <td>cell 3_3</td>
+            <td>cell 4_3</td>
+          </tr>
+          <tr>
+            <td>cell 1_4</td>
+            <td>cell 2_4</td>
+            <td>cell 3_4</td>
+            <td>cell 4_4</td>
+          </tr>
+
+          <tr>
+            <td>cell 1_1</td>
+            <td>cell 2_1</td>
+            <td>cell 3_1</td>
+            <td>cell 4_1</td>
+          </tr>
+          <tr>
+            <td>cell 1_2</td>
+            <td>cell 2_2</td>
+            <td>cell 3_2</td>
+            <td>cell 4_2</td>
+          </tr>
+          <tr>
+            <td>cell 1_3</td>
+            <td>cell 2_3</td>
+            <td>cell 3_3</td>
+            <td>cell 4_3</td>
+          </tr>
+          <tr>
+            <td>cell 1_4</td>
+            <td>cell 2_4</td>
+            <td>cell 3_4</td>
+            <td>cell 4_4</td>
+          </tr>
+          <tr>
+            <td>cell 1_1</td>
+            <td>cell 2_1</td>
+            <td>cell 3_1</td>
+            <td>cell 4_1</td>
+          </tr>
+          <tr>
+            <td>cell 1_2</td>
+            <td>cell 2_2</td>
+            <td>cell 3_2</td>
+            <td>cell 4_2</td>
+          </tr>
+          <tr>
+            <td>cell 1_3</td>
+            <td>cell 2_3</td>
+            <td>cell 3_3</td>
+            <td>cell 4_3</td>
+          </tr>
+          <tr>
+            <td>cell 1_4</td>
+            <td>cell 2_4</td>
+            <td>cell 3_4</td>
+            <td>cell 4_4</td>
+          </tr>
+          <tr>
+            <td>cell 1_1</td>
+            <td>cell 2_1</td>
+            <td>cell 3_1</td>
+            <td>cell 4_1</td>
+          </tr>
+          <tr>
+            <td>cell 1_2</td>
+            <td>cell 2_2</td>
+            <td>cell 3_2</td>
+            <td>cell 4_2</td>
+          </tr>
+          <tr>
+            <td>cell 1_3</td>
+            <td>cell 2_3</td>
+            <td>cell 3_3</td>
+            <td>cell 4_3</td>
+          </tr>
+          <tr>
+            <td>cell 1_4</td>
+            <td>cell 2_4</td>
+            <td>cell 3_4</td>
+            <td>cell 4_4</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="overlay-footer">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique soluta voluptates quisquam ullam magnam recusandae aliquid a. Quo quasi laborum reiciendis ex voluptas magnam, facere totam, modi ad alias distinctio accusantium cumque mollitia quam repellat id numquam aspernatur, laboriosam magni?</p>
+      <img src="https://placehold.co/160x70" alt="placeholder logo">
+    </div>
+
+  </div>
+
+  <script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
+
+    // Get the button that opens the modal
+    var btn = document.getElementsByClassName("popupBtn");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on the button, open the modal
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
+
 </body>
 </html>
